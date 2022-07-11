@@ -7,4 +7,6 @@ const postRoutes = require('../controller/post')
 router.get('/', getRoutes.home_get);
 router.post('/send_sms', postRoutes.send_sms);
 router.post('/voice_send', postRoutes.voice_send);
+router.post('/login', postRoutes.login);
+router.post('/add-todo', postRoutes.add_todo);
 module.exports = router;

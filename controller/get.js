@@ -5,9 +5,10 @@ const dotenv = require('dotenv');
 dotenv.config();
 module.exports.home_get = function (req, res) {
     const id = process.env.ACCOUNT_SSID
-    res.send('welcome to express')
+    res.render('home')
     console.log(id)
 }
+
 module.exports.send_sms = async (req, res) => {
     try {
         await client.messages
